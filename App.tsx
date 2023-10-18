@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  NativeModules,
 } from 'react-native';
 
 import {
@@ -28,6 +29,8 @@ import {
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
+
+NativeModules.Counter.increment(value => console.log(value, 'value'));
 
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

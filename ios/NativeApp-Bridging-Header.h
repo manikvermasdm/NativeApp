@@ -1,12 +1,6 @@
 //
-//  NativeApp-Bridging-Header.h
-//  NativeApp
-//
-//  Created by ManikVerma on 18/10/23.
+//  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#ifndef NativeApp_Bridging_Header_h
-#define NativeApp_Bridging_Header_h
 
-
-#endif /* NativeApp_Bridging_Header_h */
+#import <React/RCTBridgeModule.h>
