@@ -16,6 +16,7 @@ import {
   useColorScheme,
   View,
   NativeModules,
+  Button,
 } from 'react-native';
 
 import {
@@ -30,33 +31,9 @@ type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
-NativeModules.Counter.increment(value => console.log(value, 'value'));
-
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+const Counter = NativeModules.Counter;
+console.log(Counter);
+// NativeModules.Counter.increment(value => console.log(value, 'value'));
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -66,32 +43,16 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView
+      style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">Edit 23</Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+      <Button
+        title="Move To Ios"
+        onPress={() => Counter.callDeviceScanActivity()}
+      />
     </SafeAreaView>
   );
 }
