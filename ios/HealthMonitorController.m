@@ -31,9 +31,9 @@
     if(indexPath.row == 0)
     {
         [FitCloudKit getHealthTimingMonitorSettingWithBlock:^(BOOL succeed, FitCloudHTMObject *htmSetting, NSError *error) {
-            XLOG_INFO(@"Health Monitor Settings:\nisOn:%@\nbegin:%@\nend:%@", @(htmSetting.on), @(htmSetting.begin), @(htmSetting.end));
+//            XLOG_INFO(@"Health Monitor Settings:\nisOn:%@\nbegin:%@\nend:%@", @(htmSetting.on), @(htmSetting.begin), @(htmSetting.end));
             dispatch_async(dispatch_get_main_queue(), ^{
-                ConsoleResultToastTip(self.view);
+//                ConsoleResultToastTip(self.view);
             });
         }];
     }
@@ -45,7 +45,7 @@
         settings.end = 60*20;
         [FitCloudKit setHealthTimingMonitor:settings block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(self.view, succeed);
+//                OpResultToastTip(self.view, succeed);
             });
         }];
     }

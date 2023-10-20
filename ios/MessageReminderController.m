@@ -33,24 +33,24 @@
         FitCloudAllConfigObject* allConfig = [FitCloudKit allConfig];
         FitCloudFirmwareVersionObject* firmware = allConfig ? allConfig.firmware : nil;
         BOOL bMailReminderSupport = firmware && firmware.allowShowMailReminder;
-        XLOG_INFO(@"Mail reminder support: %@.", @(bMailReminderSupport));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Mail reminder support: %@.", @(bMailReminderSupport));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 1)
     {
         FitCloudAllConfigObject* allConfig = [FitCloudKit allConfig];
         FitCloudFirmwareVersionObject* firmware = allConfig ? allConfig.firmware : nil;
         BOOL bTelegramAndViberReminderSupport = firmware && firmware.allowShowTelegramAndViberReminder;
-        XLOG_INFO(@"Telegram & Viber reminder support: %@.", @(bTelegramAndViberReminderSupport));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Telegram & Viber reminder support: %@.", @(bTelegramAndViberReminderSupport));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 2)
     {
         FitCloudAllConfigObject* allConfig = [FitCloudKit allConfig];
         FITCLOUDMN mnSetting = allConfig ? allConfig.mnSetting : 0;
         BOOL bCallReminder = mnSetting & FITCLOUDMN_CALL;
-        XLOG_INFO(@"Call reminder enabled: %@.", @(bCallReminder));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Call reminder enabled: %@.", @(bCallReminder));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 3)
     {
@@ -65,7 +65,7 @@
             allConfig.mnSetting = mnNewSetting;
             [FitCloudKit setMessageNotification:mnNewSetting block:^(BOOL succeed, NSError *error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    OpResultToastTip(weakSelf.view, succeed);
+//                    OpResultToastTip(weakSelf.view, succeed);
                 });
                 if(!succeed) {
                     allConfig.mnSetting =  mnSetting;
@@ -73,7 +73,7 @@
             }];
             return;
         }
-        OpResultToastTip(self.view, false);
+//        OpResultToastTip(self.view, false);
     }
     else if(indexPath.row == 4)
     {
@@ -88,7 +88,7 @@
             allConfig.mnSetting = mnNewSetting;
             [FitCloudKit setMessageNotification:mnNewSetting block:^(BOOL succeed, NSError *error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    OpResultToastTip(weakSelf.view, succeed);
+//                    OpResultToastTip(weakSelf.view, succeed);
                 });
                 if(!succeed) {
                     allConfig.mnSetting = mnSetting;
@@ -96,7 +96,7 @@
             }];
             return;
         }
-        OpResultToastTip(self.view, false);
+//        OpResultToastTip(self.view, false);
     }
     else if(indexPath.row == 5)
     {
@@ -112,7 +112,7 @@
             allConfig.mnSetting = mnNewSetting;
             [FitCloudKit setMessageNotification:mnNewSetting block:^(BOOL succeed, NSError *error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    OpResultToastTip(weakSelf.view, succeed);
+//                    OpResultToastTip(weakSelf.view, succeed);
                 });
                 if(!succeed) {
                     allConfig.mnSetting = mnSetting;
@@ -120,7 +120,7 @@
             }];
             return;
         }
-        OpResultToastTip(self.view, false);
+//        OpResultToastTip(self.view, false);
     }
     else if(indexPath.row == 6)
     {
@@ -136,7 +136,7 @@
             allConfig.mnSetting = mnNewSetting;
             [FitCloudKit setMessageNotification:mnNewSetting block:^(BOOL succeed, NSError *error) {
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    OpResultToastTip(weakSelf.view, succeed);
+//                    OpResultToastTip(weakSelf.view, succeed);
                 });
                 if(!succeed) {
                     allConfig.mnSetting = mnSetting;
@@ -144,7 +144,7 @@
             }];
             return;
         }
-        OpResultToastTip(self.view, false);
+//        OpResultToastTip(self.view, false);
     }
 }
 

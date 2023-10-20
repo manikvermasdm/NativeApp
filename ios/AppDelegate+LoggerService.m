@@ -31,7 +31,7 @@
     
     {
         [QuickiOSLogServer start];
-        XLOG_INFO(@"%@", APP_LOG_STRING(@"您正在使用 iOS 远程日志查看服务！"));
+//        XLOG_INFO(@"%@", APP_LOG_STRING(@"您正在使用 iOS 远程日志查看服务！"));
     }
 }
 

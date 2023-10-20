@@ -12,6 +12,33 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		579128E82AE29FDF00FF0C3A /* ScreenDispayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128C62AE29FDD00FF0C3A /* ScreenDispayController.m */; };
+		579128E92AE29FDF00FF0C3A /* RealtimeMeasureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128C72AE29FDD00FF0C3A /* RealtimeMeasureController.m */; };
+		579128EA2AE29FDF00FF0C3A /* DailyGoalSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128C92AE29FDD00FF0C3A /* DailyGoalSettingController.m */; };
+		579128EB2AE29FDF00FF0C3A /* DeviceSearchListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128CA2AE29FDD00FF0C3A /* DeviceSearchListController.m */; };
+		579128EC2AE29FDF00FF0C3A /* UnitPreferController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128CF2AE29FDD00FF0C3A /* UnitPreferController.m */; };
+		579128ED2AE29FDF00FF0C3A /* WomenHealthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D02AE29FDD00FF0C3A /* WomenHealthController.m */; };
+		579128EE2AE29FDF00FF0C3A /* SedentaryRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D12AE29FDE00FF0C3A /* SedentaryRemindController.m */; };
+		579128EF2AE29FDF00FF0C3A /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D22AE29FDE00FF0C3A /* DeviceCell.m */; };
+		579128F02AE29FDF00FF0C3A /* WeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D32AE29FDE00FF0C3A /* WeatherController.m */; };
+		579128F12AE29FDF00FF0C3A /* AlarmController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D52AE29FDE00FF0C3A /* AlarmController.m */; };
+		579128F22AE29FDF00FF0C3A /* DrinkRemindController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128D92AE29FDE00FF0C3A /* DrinkRemindController.m */; };
+		579128F32AE29FDF00FF0C3A /* HealthMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128DB2AE29FDE00FF0C3A /* HealthMonitorController.m */; };
+		579128F42AE29FDF00FF0C3A /* DeviceBindingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E02AE29FDE00FF0C3A /* DeviceBindingController.m */; };
+		579128F52AE29FDF00FF0C3A /* WristWakeUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E12AE29FDE00FF0C3A /* WristWakeUpController.m */; };
+		579128F62AE29FDF00FF0C3A /* MessageReminderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E22AE29FDE00FF0C3A /* MessageReminderController.m */; };
+		579128F72AE29FDF00FF0C3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E32AE29FDE00FF0C3A /* ViewController.m */; };
+		579128F82AE29FDF00FF0C3A /* UserProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E42AE29FDE00FF0C3A /* UserProfileController.m */; };
+		579128F92AE29FDF00FF0C3A /* DemoListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128E52AE29FDE00FF0C3A /* DemoListController.m */; };
+		579128FE2AE29FF400FF0C3A /* AppDelegate+LoggerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128FA2AE29FF400FF0C3A /* AppDelegate+LoggerService.m */; };
+		579128FF2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 579128FC2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.m */; };
+		579129012AE2A00800FF0C3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579129002AE2A00800FF0C3A /* Main.storyboard */; };
+		579129032AE2A00D00FF0C3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579129022AE2A00D00FF0C3A /* Assets.xcassets */; };
+		5791290E2AE2A0EE00FF0C3A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5791290D2AE2A0EE00FF0C3A /* Localizable.strings */; };
+		5791291B2AE2A23D00FF0C3A /* MoCurveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 579129172AE2A23D00FF0C3A /* MoCurveLayer.m */; };
+		5791291C2AE2A23D00FF0C3A /* MoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 579129192AE2A23D00FF0C3A /* MoView.m */; };
+		5791291F2AE2A24A00FF0C3A /* LocalizedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791291D2AE2A24A00FF0C3A /* LocalizedLabel.m */; };
+		579129222AE2A25200FF0C3A /* LocalizedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 579129202AE2A25200FF0C3A /* LocalizedButton.m */; };
 		57FD73C22ADFDDF000F7B57C /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD73C12ADFDDF000F7B57C /* Counter.swift */; };
 		57FD73C72ADFDE4C00F7B57C /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD73C62ADFDE4C00F7B57C /* Counter.m */; };
 		7699B88040F8A987B510C191 /* libPods-NativeApp-NativeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-NativeApp-NativeAppTests.a */; };
@@ -41,6 +68,58 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-NativeApp-NativeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeApp-NativeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-NativeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeApp.debug.xcconfig"; path = "Target Support Files/Pods-NativeApp/Pods-NativeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-NativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeApp.release.xcconfig"; path = "Target Support Files/Pods-NativeApp/Pods-NativeApp.release.xcconfig"; sourceTree = "<group>"; };
+		579128C42AE29FDD00FF0C3A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		579128C52AE29FDD00FF0C3A /* WeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherController.h; sourceTree = "<group>"; };
+		579128C62AE29FDD00FF0C3A /* ScreenDispayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenDispayController.m; sourceTree = "<group>"; };
+		579128C72AE29FDD00FF0C3A /* RealtimeMeasureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealtimeMeasureController.m; sourceTree = "<group>"; };
+		579128C82AE29FDD00FF0C3A /* SedentaryRemindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SedentaryRemindController.h; sourceTree = "<group>"; };
+		579128C92AE29FDD00FF0C3A /* DailyGoalSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyGoalSettingController.m; sourceTree = "<group>"; };
+		579128CA2AE29FDD00FF0C3A /* DeviceSearchListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceSearchListController.m; sourceTree = "<group>"; };
+		579128CB2AE29FDD00FF0C3A /* AlarmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmController.h; sourceTree = "<group>"; };
+		579128CC2AE29FDD00FF0C3A /* WomenHealthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WomenHealthController.h; sourceTree = "<group>"; };
+		579128CD2AE29FDD00FF0C3A /* UnitPreferController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitPreferController.h; sourceTree = "<group>"; };
+		579128CE2AE29FDD00FF0C3A /* DeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCell.h; sourceTree = "<group>"; };
+		579128CF2AE29FDD00FF0C3A /* UnitPreferController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitPreferController.m; sourceTree = "<group>"; };
+		579128D02AE29FDD00FF0C3A /* WomenHealthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WomenHealthController.m; sourceTree = "<group>"; };
+		579128D12AE29FDE00FF0C3A /* SedentaryRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SedentaryRemindController.m; sourceTree = "<group>"; };
+		579128D22AE29FDE00FF0C3A /* DeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
+		579128D32AE29FDE00FF0C3A /* WeatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherController.m; sourceTree = "<group>"; };
+		579128D42AE29FDE00FF0C3A /* RealtimeMeasureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtimeMeasureController.h; sourceTree = "<group>"; };
+		579128D52AE29FDE00FF0C3A /* AlarmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmController.m; sourceTree = "<group>"; };
+		579128D62AE29FDE00FF0C3A /* DeviceBindingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceBindingController.h; sourceTree = "<group>"; };
+		579128D72AE29FDE00FF0C3A /* MessageReminderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageReminderController.h; sourceTree = "<group>"; };
+		579128D82AE29FDE00FF0C3A /* ScreenDispayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenDispayController.h; sourceTree = "<group>"; };
+		579128D92AE29FDE00FF0C3A /* DrinkRemindController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkRemindController.m; sourceTree = "<group>"; };
+		579128DA2AE29FDE00FF0C3A /* DeviceSearchListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceSearchListController.h; sourceTree = "<group>"; };
+		579128DB2AE29FDE00FF0C3A /* HealthMonitorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthMonitorController.m; sourceTree = "<group>"; };
+		579128DC2AE29FDE00FF0C3A /* DrinkRemindController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkRemindController.h; sourceTree = "<group>"; };
+		579128DD2AE29FDE00FF0C3A /* DailyGoalSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyGoalSettingController.h; sourceTree = "<group>"; };
+		579128DE2AE29FDE00FF0C3A /* HealthMonitorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthMonitorController.h; sourceTree = "<group>"; };
+		579128DF2AE29FDE00FF0C3A /* WristWakeUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WristWakeUpController.h; sourceTree = "<group>"; };
+		579128E02AE29FDE00FF0C3A /* DeviceBindingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceBindingController.m; sourceTree = "<group>"; };
+		579128E12AE29FDE00FF0C3A /* WristWakeUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WristWakeUpController.m; sourceTree = "<group>"; };
+		579128E22AE29FDE00FF0C3A /* MessageReminderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageReminderController.m; sourceTree = "<group>"; };
+		579128E32AE29FDE00FF0C3A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		579128E42AE29FDE00FF0C3A /* UserProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileController.m; sourceTree = "<group>"; };
+		579128E52AE29FDE00FF0C3A /* DemoListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoListController.m; sourceTree = "<group>"; };
+		579128E62AE29FDE00FF0C3A /* DemoListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoListController.h; sourceTree = "<group>"; };
+		579128E72AE29FDF00FF0C3A /* UserProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileController.h; sourceTree = "<group>"; };
+		579128FA2AE29FF400FF0C3A /* AppDelegate+LoggerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LoggerService.m"; sourceTree = "<group>"; };
+		579128FB2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+FitCloudKit.h"; sourceTree = "<group>"; };
+		579128FC2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+FitCloudKit.m"; sourceTree = "<group>"; };
+		579128FD2AE29FF400FF0C3A /* AppDelegate+LoggerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+LoggerService.h"; sourceTree = "<group>"; };
+		579129002AE2A00800FF0C3A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		579129022AE2A00D00FF0C3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../FitCloudKitDemo/FitCloudKitDemo/Assets.xcassets; sourceTree = "<group>"; };
+		579129042AE2A01A00FF0C3A /* FitCloudKitDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FitCloudKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		5791290D2AE2A0EE00FF0C3A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		579129172AE2A23D00FF0C3A /* MoCurveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoCurveLayer.m; sourceTree = "<group>"; };
+		579129182AE2A23D00FF0C3A /* MoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoView.h; sourceTree = "<group>"; };
+		579129192AE2A23D00FF0C3A /* MoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoView.m; sourceTree = "<group>"; };
+		5791291A2AE2A23D00FF0C3A /* MoCurveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoCurveLayer.h; sourceTree = "<group>"; };
+		5791291D2AE2A24A00FF0C3A /* LocalizedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizedLabel.m; sourceTree = "<group>"; };
+		5791291E2AE2A24A00FF0C3A /* LocalizedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizedLabel.h; sourceTree = "<group>"; };
+		579129202AE2A25200FF0C3A /* LocalizedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizedButton.m; sourceTree = "<group>"; };
+		579129212AE2A25200FF0C3A /* LocalizedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizedButton.h; sourceTree = "<group>"; };
 		57FD73C12ADFDDF000F7B57C /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		57FD73C52ADFDE4100F7B57C /* NativeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		57FD73C62ADFDE4C00F7B57C /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
@@ -91,8 +170,53 @@
 		13B07FAE1A68108700A75B9A /* NativeApp */ = {
 			isa = PBXGroup;
 			children = (
+				579129132AE2A21100FF0C3A /* Vendors */,
+				579128FB2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.h */,
+				579128FC2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.m */,
+				579128FD2AE29FF400FF0C3A /* AppDelegate+LoggerService.h */,
+				579128FA2AE29FF400FF0C3A /* AppDelegate+LoggerService.m */,
+				579128CB2AE29FDD00FF0C3A /* AlarmController.h */,
+				579128D52AE29FDE00FF0C3A /* AlarmController.m */,
+				579128DD2AE29FDE00FF0C3A /* DailyGoalSettingController.h */,
+				579128C92AE29FDD00FF0C3A /* DailyGoalSettingController.m */,
+				579128E62AE29FDE00FF0C3A /* DemoListController.h */,
+				579128E52AE29FDE00FF0C3A /* DemoListController.m */,
+				579128D62AE29FDE00FF0C3A /* DeviceBindingController.h */,
+				579128E02AE29FDE00FF0C3A /* DeviceBindingController.m */,
+				579128CE2AE29FDD00FF0C3A /* DeviceCell.h */,
+				579128D22AE29FDE00FF0C3A /* DeviceCell.m */,
+				579128DA2AE29FDE00FF0C3A /* DeviceSearchListController.h */,
+				579128CA2AE29FDD00FF0C3A /* DeviceSearchListController.m */,
+				579128DC2AE29FDE00FF0C3A /* DrinkRemindController.h */,
+				579128D92AE29FDE00FF0C3A /* DrinkRemindController.m */,
+				579128DE2AE29FDE00FF0C3A /* HealthMonitorController.h */,
+				579128DB2AE29FDE00FF0C3A /* HealthMonitorController.m */,
+				579128D72AE29FDE00FF0C3A /* MessageReminderController.h */,
+				579128E22AE29FDE00FF0C3A /* MessageReminderController.m */,
+				579128D42AE29FDE00FF0C3A /* RealtimeMeasureController.h */,
+				579128C72AE29FDD00FF0C3A /* RealtimeMeasureController.m */,
+				579128D82AE29FDE00FF0C3A /* ScreenDispayController.h */,
+				579128C62AE29FDD00FF0C3A /* ScreenDispayController.m */,
+				579128C82AE29FDD00FF0C3A /* SedentaryRemindController.h */,
+				579128D12AE29FDE00FF0C3A /* SedentaryRemindController.m */,
+				579128CD2AE29FDD00FF0C3A /* UnitPreferController.h */,
+				579128CF2AE29FDD00FF0C3A /* UnitPreferController.m */,
+				579128E72AE29FDF00FF0C3A /* UserProfileController.h */,
+				579128E42AE29FDE00FF0C3A /* UserProfileController.m */,
+				579128C42AE29FDD00FF0C3A /* ViewController.h */,
+				579128E32AE29FDE00FF0C3A /* ViewController.m */,
+				579128C52AE29FDD00FF0C3A /* WeatherController.h */,
+				579128D32AE29FDE00FF0C3A /* WeatherController.m */,
+				579128CC2AE29FDD00FF0C3A /* WomenHealthController.h */,
+				579128D02AE29FDD00FF0C3A /* WomenHealthController.m */,
+				579128DF2AE29FDE00FF0C3A /* WristWakeUpController.h */,
+				579128E12AE29FDE00FF0C3A /* WristWakeUpController.m */,
+				579129002AE2A00800FF0C3A /* Main.storyboard */,
+				579129022AE2A00D00FF0C3A /* Assets.xcassets */,
+				579129042AE2A01A00FF0C3A /* FitCloudKitDemo-Prefix.pch */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				5791290D2AE2A0EE00FF0C3A /* Localizable.strings */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				57FD73C62ADFDE4C00F7B57C /* Counter.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -112,6 +236,45 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-NativeApp-NativeAppTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		579129132AE2A21100FF0C3A /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				579129162AE2A22B00FF0C3A /* LocalizedButton */,
+				579129152AE2A22000FF0C3A /* LocalizedLabel */,
+				579129142AE2A21900FF0C3A /* MoLoading */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		579129142AE2A21900FF0C3A /* MoLoading */ = {
+			isa = PBXGroup;
+			children = (
+				5791291A2AE2A23D00FF0C3A /* MoCurveLayer.h */,
+				579129172AE2A23D00FF0C3A /* MoCurveLayer.m */,
+				579129182AE2A23D00FF0C3A /* MoView.h */,
+				579129192AE2A23D00FF0C3A /* MoView.m */,
+			);
+			name = MoLoading;
+			sourceTree = "<group>";
+		};
+		579129152AE2A22000FF0C3A /* LocalizedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				5791291E2AE2A24A00FF0C3A /* LocalizedLabel.h */,
+				5791291D2AE2A24A00FF0C3A /* LocalizedLabel.m */,
+			);
+			name = LocalizedLabel;
+			sourceTree = "<group>";
+		};
+		579129162AE2A22B00FF0C3A /* LocalizedButton */ = {
+			isa = PBXGroup;
+			children = (
+				579129212AE2A25200FF0C3A /* LocalizedButton.h */,
+				579129202AE2A25200FF0C3A /* LocalizedButton.m */,
+			);
+			name = LocalizedButton;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -250,7 +413,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5791290E2AE2A0EE00FF0C3A /* Localizable.strings in Resources */,
+				579129012AE2A00800FF0C3A /* Main.storyboard in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				579129032AE2A00D00FF0C3A /* Assets.xcassets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +586,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579128F02AE29FDF00FF0C3A /* WeatherController.m in Sources */,
+				579128F12AE29FDF00FF0C3A /* AlarmController.m in Sources */,
 				57FD73C72ADFDE4C00F7B57C /* Counter.m in Sources */,
+				579128E92AE29FDF00FF0C3A /* RealtimeMeasureController.m in Sources */,
+				579128F92AE29FDF00FF0C3A /* DemoListController.m in Sources */,
+				579128FF2AE29FF400FF0C3A /* AppDelegate+FitCloudKit.m in Sources */,
+				579128ED2AE29FDF00FF0C3A /* WomenHealthController.m in Sources */,
+				579128F62AE29FDF00FF0C3A /* MessageReminderController.m in Sources */,
+				579128EF2AE29FDF00FF0C3A /* DeviceCell.m in Sources */,
+				579128F32AE29FDF00FF0C3A /* HealthMonitorController.m in Sources */,
+				579128F42AE29FDF00FF0C3A /* DeviceBindingController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				5791291C2AE2A23D00FF0C3A /* MoView.m in Sources */,
+				579128F22AE29FDF00FF0C3A /* DrinkRemindController.m in Sources */,
+				579128F82AE29FDF00FF0C3A /* UserProfileController.m in Sources */,
+				579128E82AE29FDF00FF0C3A /* ScreenDispayController.m in Sources */,
+				579128EA2AE29FDF00FF0C3A /* DailyGoalSettingController.m in Sources */,
+				579128F52AE29FDF00FF0C3A /* WristWakeUpController.m in Sources */,
+				5791291B2AE2A23D00FF0C3A /* MoCurveLayer.m in Sources */,
+				579128F72AE29FDF00FF0C3A /* ViewController.m in Sources */,
+				5791291F2AE2A24A00FF0C3A /* LocalizedLabel.m in Sources */,
+				579128EC2AE29FDF00FF0C3A /* UnitPreferController.m in Sources */,
+				579128EB2AE29FDF00FF0C3A /* DeviceSearchListController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				57FD73C22ADFDDF000F7B57C /* Counter.swift in Sources */,
+				579128EE2AE29FDF00FF0C3A /* SedentaryRemindController.m in Sources */,
+				579128FE2AE29FF400FF0C3A /* AppDelegate+LoggerService.m in Sources */,
+				579129222AE2A25200FF0C3A /* LocalizedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,7 +770,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -653,7 +843,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

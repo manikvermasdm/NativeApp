@@ -34,9 +34,9 @@
     if(indexPath.row == 0)
     {
         [FitCloudKit getSedentaryRemindSettingWithBlock:^(BOOL succeed, FitCloudLSRObject *lsrSetting, NSError *error) {
-            XLOG_INFO(@"Sedentary Remind Settings:\nisOn:%@\noffWhenLunchBreak:%@\nbegin:%@\nend:%@", @(lsrSetting.on), @(lsrSetting.offWhenLunchBreak), @(lsrSetting.begin), @(lsrSetting.end));
+//            XLOG_INFO(@"Sedentary Remind Settings:\nisOn:%@\noffWhenLunchBreak:%@\nbegin:%@\nend:%@", @(lsrSetting.on), @(lsrSetting.offWhenLunchBreak), @(lsrSetting.begin), @(lsrSetting.end));
             dispatch_async(dispatch_get_main_queue(), ^{
-                ConsoleResultToastTip(self.view);
+//                ConsoleResultToastTip(self.view);
             });
         }];
     }
@@ -49,7 +49,7 @@
         settings.end = 60*20;
         [FitCloudKit setSedentaryRemind:settings block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(self.view, succeed);
+//                OpResultToastTip(self.view, succeed);
             });
         }];
     }

@@ -61,7 +61,7 @@
     __weak typeof(self) weakSelf = self;
     [FitCloudKit setFitCloudPrefer:newPrefer block:^(BOOL succeed, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            OpResultToastTip(weakSelf.view, succeed);
+//            OpResultToastTip(weakSelf.view, succeed);
         });
         if(!succeed)
         {
@@ -80,7 +80,7 @@
     __weak typeof(self) weakSelf = self;
     [FitCloudKit setFitCloudPrefer:newPrefer block:^(BOOL succeed, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            OpResultToastTip(weakSelf.view, succeed);
+//            OpResultToastTip(weakSelf.view, succeed);
         });
         if(!succeed)
         {
@@ -99,7 +99,7 @@
     __weak typeof(self) weakSelf = self;
     [FitCloudKit setFitCloudPrefer:newPrefer block:^(BOOL succeed, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            OpResultToastTip(weakSelf.view, succeed);
+//            OpResultToastTip(weakSelf.view, succeed);
         });
         if(!succeed)
         {

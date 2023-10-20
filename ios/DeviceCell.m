@@ -66,7 +66,7 @@
             self.status.hidden = NO;
             if(state == CBPeripheralStateConnected && !peripheral.paired)
             {
-                self.status.textColor = RGB(0x00, 0xB2, 0x00);
+//                self.status.textColor = RGB(0x00, 0xB2, 0x00);
                 self.status.text = NSLocalizedString(@"CONNECTED", nil);
             }
             else if(state == CBPeripheralStateDisconnected || peripheral.paired)

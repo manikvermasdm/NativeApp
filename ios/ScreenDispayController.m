@@ -33,8 +33,8 @@
         FitCloudAllConfigObject* allConfig = [FitCloudKit allConfig];
         FitCloudFirmwareVersionObject* firmware = allConfig ? allConfig.firmware : nil;
         FITCLOUDSCREENDISPLAY screenDisplaySupported = firmware ? firmware.screenDisplaySupported : 0;
-        XLOG_INFO(@"Supported Screen Display Items: %@.", @(screenDisplaySupported));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Supported Screen Display Items: %@.", @(screenDisplaySupported));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 1)
     {
@@ -42,8 +42,8 @@
         FitCloudFirmwareVersionObject* firmware = allConfig ? allConfig.firmware : nil;
         FITCLOUDSCREENDISPLAY screenDisplaySupported = firmware ? firmware.screenDisplaySupported : 0;
         BOOL bSupportDisplayStepsItem = screenDisplaySupported & FITCLOUDSCREENDISPLAY_STEPS;
-        XLOG_INFO(@"Support Display Steps: %@.", @(bSupportDisplayStepsItem));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Support Display Steps: %@.", @(bSupportDisplayStepsItem));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 2)
     {
@@ -53,14 +53,14 @@
         BOOL bSupportDisplayStepsItem = screenDisplaySupported & FITCLOUDSCREENDISPLAY_STEPS;
         if(!bSupportDisplayStepsItem)
         {
-            XLOG_INFO(@"Not Support.");
-            ConsoleResultToastTip(self.view);
+//            XLOG_INFO(@"Not Support.");
+//            ConsoleResultToastTip(self.view);
             return;
         }
         FITCLOUDSCREENDISPLAY screenDisplaySettings = allConfig.sdSetting;
         BOOL bStepsItemShown = screenDisplaySettings & FITCLOUDSCREENDISPLAY_STEPS;
-        XLOG_INFO(@"Steps Item Current Shown: %@.", @(bStepsItemShown));
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Steps Item Current Shown: %@.", @(bStepsItemShown));
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 3)
     {
@@ -70,15 +70,15 @@
         BOOL bSupportDisplayStepsItem = screenDisplaySupported & FITCLOUDSCREENDISPLAY_STEPS;
         if(!bSupportDisplayStepsItem)
         {
-            XLOG_INFO(@"Not Support.");
-            ConsoleResultToastTip(self.view);
+//            XLOG_INFO(@"Not Support.");
+//            ConsoleResultToastTip(self.view);
             return;
         }
         FITCLOUDSCREENDISPLAY sdSetting = allConfig.sdSetting;
         BOOL bStepsItemShown = sdSetting & FITCLOUDSCREENDISPLAY_STEPS;
         if(bStepsItemShown)
         {
-            OpResultToastTip(self.view, false);
+//            OpResultToastTip(self.view, false);
             return;
         }
         __weak typeof(self) weakSelf = self;
@@ -87,7 +87,7 @@
         allConfig.sdSetting = sdNewSetting;
         [FitCloudKit setScreenDisplay:sdNewSetting block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(weakSelf.view, succeed);
+//                OpResultToastTip(weakSelf.view, succeed);
             });
             if(!succeed) {
                 allConfig.sdSetting = sdSetting;
@@ -102,15 +102,15 @@
         BOOL bSupportDisplayStepsItem = screenDisplaySupported & FITCLOUDSCREENDISPLAY_STEPS;
         if(!bSupportDisplayStepsItem)
         {
-            XLOG_INFO(@"Not Support.");
-            ConsoleResultToastTip(self.view);
+//            XLOG_INFO(@"Not Support.");
+//            ConsoleResultToastTip(self.view);
             return;
         }
         FITCLOUDSCREENDISPLAY sdSetting = allConfig.sdSetting;
         BOOL bStepsItemShown = sdSetting & FITCLOUDSCREENDISPLAY_STEPS;
         if(!bStepsItemShown)
         {
-            OpResultToastTip(self.view, false);
+//            OpResultToastTip(self.view, false);
             return;
         }
         __weak typeof(self) weakSelf = self;
@@ -119,7 +119,7 @@
         allConfig.sdSetting = sdNewSetting;
         [FitCloudKit setScreenDisplay:sdNewSetting block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(weakSelf.view, succeed);
+//                OpResultToastTip(weakSelf.view, succeed);
             });
             if(!succeed) {
                 allConfig.sdSetting = sdSetting;

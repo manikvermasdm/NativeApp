@@ -76,7 +76,7 @@
              self.btnRemoveDevice.hidden = TRUE;
              self.btnMoreDemo.hidden = TRUE;
              self.connectStatus.text = NSLocalizedString(@"Connecting...", nil);
-             self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
+//             self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
          }
          
      }
@@ -107,7 +107,7 @@
         self.btnRemoveDevice.hidden = TRUE;
         self.btnMoreDemo.hidden = TRUE;
         self.connectStatus.text = NSLocalizedString(@"Connecting...", nil);
-        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
+//        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
     });
 }
 
@@ -116,7 +116,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         if(self.indicator.isAnimating)[self.indicator stopAnimating];
         self.connectStatus.text = NSLocalizedString(@"Connected", nil);
-        self.connectStatus.textColor = RGB(0x00, 0xB2, 0x00);
+//        self.connectStatus.textColor = RGB(0x00, 0xB2, 0x00);
         self.btnConnectDevice.hidden = TRUE;
         self.imageSmartWatch.hidden = self.deviceName.hidden = FALSE;
         self.btnSearch.hidden = TRUE;
@@ -129,7 +129,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         if(self.indicator.isAnimating)[self.indicator stopAnimating];
         self.connectStatus.text = NSLocalizedString(@"Disconnected", nil);
-        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
+//        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
         if([FitCloudKit lastConnectPeripheral])self.btnConnectDevice.hidden = FALSE;
         self.btnRemoveDevice.hidden = NO;
         self.btnMoreDemo.hidden = YES;
@@ -143,7 +143,7 @@
         if(self.indicator.isAnimating)[self.indicator stopAnimating];
         self.btnConnectDevice.hidden = FALSE;
         self.connectStatus.text = NSLocalizedString(@"Disconnected", nil);
-        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
+//        self.connectStatus.textColor = RGB(0x9A, 0x9A, 0x9A);
     });
 }
 
@@ -174,7 +174,7 @@
         NSDictionary *userInfo = notification.userInfo;
         if([userInfo isKindOfClass:[NSDictionary class]])
         {
-            result = [userInfo boolValueForKey:@"result" default:NO];
+//            result = [userInfo boolValueForKey:@"result" default:NO];
         }
         self.progressTip.text = result ? NSLocalizedString(@"Login User Object Success", nil) : NSLocalizedString(@"Login User Object Failure", nil);
     });
@@ -194,7 +194,8 @@
         NSDictionary *userInfo = notification.userInfo;
         if([userInfo isKindOfClass:[NSDictionary class]])
         {
-            result = [userInfo boolValueForKey:@"result" default:NO];
+          // Suspected reason for crash
+//            result = [userInfo boolValueForKey:@"result" default:NO];
         }
         self.progressTip.text = result ? NSLocalizedString(@"Get Smart Watch All Config Success", nil) : NSLocalizedString(@"Get Smart Watch All Config Failure", nil);
     });

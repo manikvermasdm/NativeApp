@@ -31,9 +31,9 @@
     if(indexPath.row == 0)
     {
         [FitCloudKit getWristWakeUpSettingWithBlock:^(BOOL succeed, FitCloudWWUObject *wwuSetting, NSError *error) {
-            XLOG_INFO(@"Wrist Wake Up Settings:\nisOn:%@\nbegin:%@\nend:%@", @(wwuSetting.on), @(wwuSetting.begin), @(wwuSetting.end));
+//            XLOG_INFO(@"Wrist Wake Up Settings:\nisOn:%@\nbegin:%@\nend:%@", @(wwuSetting.on), @(wwuSetting.begin), @(wwuSetting.end));
             dispatch_async(dispatch_get_main_queue(), ^{
-                ConsoleResultToastTip(self.view);
+//                ConsoleResultToastTip(self.view);
             });
         }];
     }
@@ -45,7 +45,7 @@
         settings.end = 60*20;
         [FitCloudKit setWristWakeUp:settings block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(self.view, succeed);
+//                OpResultToastTip(self.view, succeed);
             });
         }];
     }

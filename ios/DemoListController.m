@@ -42,10 +42,10 @@
     [FitCloudKit requestHealthAndSportsDataTodayWithBlock:^(BOOL succeed, NSString* userId, FitCloudDailyHealthAndSportsDataObject *dataObject, NSError *error) {
         if([dataObject isKindOfClass:[FitCloudDailyHealthAndSportsDataObject class]])
         {
-            NSString * log = APP_LOG_STRING(@"\n今日运动数据：\n步数：%@\n距离：%@\n卡路里：%@\n深睡：%@\n浅睡：%@\n平均心率：%@", @(dataObject.steps), @(dataObject.distance), @(dataObject.calory), @(dataObject.deepSleepMinutes),@(dataObject.shallowSleepMinutes),@(dataObject.averageHeartRate));
-            XLOG_INFO(@"%@", log);
+//            NSString * log = APP_LOG_STRING(@"\n今日运动数据：\n步数：%@\n距离：%@\n卡路里：%@\n深睡：%@\n浅睡：%@\n平均心率：%@", @(dataObject.steps), @(dataObject.distance), @(dataObject.calory), @(dataObject.deepSleepMinutes),@(dataObject.shallowSleepMinutes),@(dataObject.averageHeartRate));
+//            XLOG_INFO(@"%@", log);
             dispatch_async(dispatch_get_main_queue(), ^{
-                ConsoleResultToastTip(weakSelf.view);
+//                ConsoleResultToastTip(weakSelf.view);
             });
         }
         
@@ -56,26 +56,26 @@
 {
     __weak typeof(self) weakSelf = self;
     [FitCloudKit manualSyncDataWithOption:FITCLOUDDATASYNCOPTION_ALL progress:^(CGFloat progress, NSString *tip) {
-        XLOG_INFO(@"%@", APP_LOG_STRING(@"同步进度：%.0f%%, %@",progress*100.0f, tip));
+//        XLOG_INFO(@"%@", APP_LOG_STRING(@"同步进度：%.0f%%, %@",progress*100.0f, tip));
     } block:^(BOOL succeed, NSString* userId, NSArray<FitCloudManualSyncRecordObject*> *records, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            ConsoleResultToastTip(weakSelf.view);
+//            ConsoleResultToastTip(weakSelf.view);
         });
         BOOL hasRecords = [records isKindOfClass:[NSArray class]] && [records count] > 0;
         if(succeed && hasRecords)
         {
-            XLOG_INFO(@"%@", APP_LOG_STRING(@"数据同步成功，共同步到%@条记录。", @([records count])));
+//            XLOG_INFO(@"%@", APP_LOG_STRING(@"数据同步成功，共同步到%@条记录。", @([records count])));
 #if DEBUG
-            XLOG_INFO(@"同步到的记录详情：\n %@", records);
+//            XLOG_INFO(@"同步到的记录详情：\n %@", records);
 #endif
             return;
         }
         if(!succeed)
         {
-            XLOG_WARNING(@"%@", APP_LOG_STRING(@"数据同步失败，发生错误：%@。", error));
+//            XLOG_WARNING(@"%@", APP_LOG_STRING(@"数据同步失败，发生错误：%@。", error));
             return;
         }
-        XLOG_WARNING(@"%@", APP_LOG_STRING(@"当前没有可同步的数据。"));
+//        XLOG_WARNING(@"%@", APP_LOG_STRING(@"当前没有可同步的数据。"));
     }];
 }
 

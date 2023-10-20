@@ -30,6 +30,15 @@ target 'NativeApp' do
  
   # Flags change depending on the env values.
   flags = get_default_flags()
+  
+  # Pods for FitCloudKitDemo
+  pod 'FitCloudKit', git: 'https://github.com/htangsmart/FitCloudPro-SDK-iOS.git'
+  pod 'QuickTraceiOSLogger'
+  pod 'YYCategories'
+  pod 'Toast'
+
+  
+  
 
   use_react_native!(
     :path => config[:reactNativePath],

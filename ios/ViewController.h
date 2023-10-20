@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <FitCloudKit/FitCloudKit.h>
 @interface ViewController : UIViewController
 
 

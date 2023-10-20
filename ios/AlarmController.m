@@ -32,8 +32,8 @@
     if(indexPath.row == 0)
     {
 //        NSArray<FitCloudAlarmObject*>* alarmlist = [FitCloudKit alarmlist];
-        XLOG_INFO(@"Alarm list: %@.");
-        ConsoleResultToastTip(self.view);
+//        XLOG_INFO(@"Alarm list: %@.");
+//        ConsoleResultToastTip(self.view);
     }
     else if(indexPath.row == 1)
     {
@@ -42,12 +42,12 @@
         NSDateComponents* scrollTo = [NSDateComponents new];
         NSCalendar* gregorianCalendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
         NSDate* now = [NSDate date];
-        scrollTo.hour = now.hour;
-        scrollTo.minute = now.minute;
+//        scrollTo.hour = now.hour;
+//        scrollTo.minute = now.minute;
         alarm.fire = scrollTo;
         alarm.fire.year = [[gregorianCalendar components:NSCalendarUnitYear fromDate:now] year];
-        alarm.fire.month = now.month;
-        alarm.fire.day = now.day;
+//        alarm.fire.month = now.month;
+//        alarm.fire.day = now.day;
         alarm.fire.second = 0;
         alarm.cycle = FITCLOUDALARMCYCLE_MON;
         alarm.on = YES;
@@ -57,7 +57,7 @@
         __weak typeof(self) weakSelf = self;
         [FitCloudKit setAlarms:alarmlist block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(weakSelf.view, succeed);
+//                OpResultToastTip(weakSelf.view, succeed);
             });
         }];
     }
@@ -66,7 +66,7 @@
         NSArray<FitCloudAlarmObject*>* alarmlist = [FitCloudKit alarmlist];
         if([alarmlist count] == 0)
         {
-            OpResultToastTip(self.view, false);
+//            OpResultToastTip(self.view, false);
             return;
         }
         NSMutableArray<FitCloudAlarmObject*>* newAlarmlist = [NSMutableArray<FitCloudAlarmObject*> array];
@@ -77,12 +77,12 @@
         NSDateComponents* scrollTo = [NSDateComponents new];
         NSCalendar* gregorianCalendar = [NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian];
         NSDate* now = [NSDate date];
-        scrollTo.hour = now.hour;
-        scrollTo.minute = now.minute;
+//        scrollTo.hour = now.hour;
+//        scrollTo.minute = now.minute;
         alarm.fire = scrollTo;
         alarm.fire.year = [[gregorianCalendar components:NSCalendarUnitYear fromDate:now] year];
-        alarm.fire.month = now.month;
-        alarm.fire.day = now.day;
+//        alarm.fire.month = now.month;
+//        alarm.fire.day = now.day;
         alarm.fire.second = 0;
         alarm.cycle = FITCLOUDALARMCYCLE_MON;
         alarm.on = FALSE;
@@ -91,7 +91,7 @@
         __weak typeof(self) weakSelf = self;
         [FitCloudKit setAlarms:alarmlist block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(weakSelf.view, succeed);
+//                OpResultToastTip(weakSelf.view, succeed);
             });
         }];
     }

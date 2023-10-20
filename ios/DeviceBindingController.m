@@ -15,8 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *bindingImageView;
 @property (weak, nonatomic) IBOutlet MoView *resultView;
-@property (weak, nonatomic) IBOutlet LocalizedLabel *titleLabel;
-@property (weak, nonatomic) IBOutlet LocalizedLabel *subTitleLabel;
+//@property (weak, nonatomic) IBOutlet LocalizedLabel *titleLabel;
+//@property (weak, nonatomic) IBOutlet LocalizedLabel *subTitleLabel;
 @property (weak, nonatomic) IBOutlet UIButton *btnEnjoy;
 @property (weak, nonatomic) IBOutlet UILabel *tipProgressLabel;
 @property (weak, nonatomic) IBOutlet UIButton *btnTryLater;
@@ -79,11 +79,11 @@
     }
     
     {
-        self.titleLabel.alpha = 0.0f;
+//        self.titleLabel.alpha = 0.0f;
     }
     
     {
-        self.subTitleLabel.alpha = 0.0f;
+//        self.subTitleLabel.alpha = 0.0f;
     }
     
     {
@@ -124,7 +124,7 @@
         NSDictionary *userInfo = notification.userInfo;
         if([userInfo isKindOfClass:[NSDictionary class]])
         {
-            result = [userInfo boolValueForKey:@"result" default:NO];
+//            result = [userInfo boolValueForKey:@"result" default:NO];
         }
         self.tipProgressLabel.text = result ? NSLocalizedString(@"Bind User Object Success", nil) : NSLocalizedString(@"Bind User Object Failure", nil);
     });
@@ -144,7 +144,7 @@
         NSDictionary *userInfo = notification.userInfo;
         if([userInfo isKindOfClass:[NSDictionary class]])
         {
-            result = [userInfo boolValueForKey:@"result" default:NO];
+//            result = [userInfo boolValueForKey:@"result" default:NO];
         }
         self.tipProgressLabel.text = result ? NSLocalizedString(@"Get Smart Watch All Config Success", nil) : NSLocalizedString(@"Get Smart Watch All Config Failure", nil);
     });
@@ -156,56 +156,56 @@
         NSDictionary *userInfo = notification.userInfo;
         if([userInfo isKindOfClass:[NSDictionary class]])
         {
-            BOOL result = [userInfo boolValueForKey:@"result" default:NO];
-            self.bBindSuccess = result;
+//            BOOL result = [userInfo boolValueForKey:@"result" default:NO];
+//            self.bBindSuccess = result;
             NSError * error = [userInfo objectForKey:@"error"];
             if([error isKindOfClass:[NSError class]] && error.code == FITCLOUDKITERROR_USEROBJECTALREADYBOUND)
             {
                 self.bShouldUnBindFirst = YES;
             }
-            [self.btnEnjoy setTitle:result ? NSLocalizedString(@"Enjoy Now", nil) : (self.bShouldUnBindFirst ? NSLocalizedString(@"Unbind And Retry", nil) : NSLocalizedString(@"Retry", nil)) forState:UIControlStateNormal];
+//            [self.btnEnjoy setTitle:result ? NSLocalizedString(@"Enjoy Now", nil) : (self.bShouldUnBindFirst ? NSLocalizedString(@"Unbind And Retry", nil) : NSLocalizedString(@"Retry", nil)) forState:UIControlStateNormal];
             [self.view layoutIfNeeded];
             __weak typeof (self) weakSelf = self;
             [UIView animateWithDuration:0.45 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                 
                 __strong typeof(weakSelf) strongSelf = weakSelf;
                 if (!strongSelf) return;
-                if(result)
-                {
-                    strongSelf.titleLabel.text = NSLocalizedString(@"Smart Watch Bind Success", nil);
-                    strongSelf.subTitleLabel.text = NSLocalizedString(@"Your Smart Watch Complete Bind...", nil);
-                }
-                else
-                {
-                    strongSelf.titleLabel.text = NSLocalizedString(@"Smart Watch Bind Failure", nil);
-                    strongSelf.subTitleLabel.text = NSLocalizedString(@"Your Smart Watch Complete Failed to Bind...", nil);
-                }
+//                if(result)
+//                {
+//                    strongSelf.titleLabel.text = NSLocalizedString(@"Smart Watch Bind Success", nil);
+//                    strongSelf.subTitleLabel.text = NSLocalizedString(@"Your Smart Watch Complete Bind...", nil);
+//                }
+//                else
+//                {
+//                    strongSelf.titleLabel.text = NSLocalizedString(@"Smart Watch Bind Failure", nil);
+//                    strongSelf.subTitleLabel.text = NSLocalizedString(@"Your Smart Watch Complete Failed to Bind...", nil);
+//                }
                 strongSelf.bindingImageView.hidden = YES;
                 strongSelf.resultView.alpha = 0.8f;
                 [strongSelf.resultView startLoading];
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    if(result)
-                    {
-                        [strongSelf.resultView success:^{
-                            strongSelf.btnEnjoy.hidden = NO;
-                            strongSelf.btnEnjoy.alpha = 1.0f;
-                            self.tipProgressLabel.text = @"";
-                            strongSelf.btnTryLater.hidden = YES;
-                            strongSelf.btnTryLater.alpha = 0.0f;
-                            [strongSelf.view layoutIfNeeded];
-                        }];
-                    }
-                    else
-                    {
-                        [strongSelf.resultView error:^{
-                            strongSelf.btnEnjoy.hidden = NO;
-                            strongSelf.btnEnjoy.alpha = 1.0f;
-                            self.tipProgressLabel.text = @"";
-                            strongSelf.btnTryLater.hidden = NO;
-                            strongSelf.btnTryLater.alpha = 1.0f;
-                            [strongSelf.view layoutIfNeeded];
-                        }];
-                    }
+//                    if(result)
+//                    {
+//                        [strongSelf.resultView success:^{
+//                            strongSelf.btnEnjoy.hidden = NO;
+//                            strongSelf.btnEnjoy.alpha = 1.0f;
+//                            self.tipProgressLabel.text = @"";
+//                            strongSelf.btnTryLater.hidden = YES;
+//                            strongSelf.btnTryLater.alpha = 0.0f;
+//                            [strongSelf.view layoutIfNeeded];
+//                        }];
+//                    }
+//                    else
+//                    {
+//                        [strongSelf.resultView error:^{
+//                            strongSelf.btnEnjoy.hidden = NO;
+//                            strongSelf.btnEnjoy.alpha = 1.0f;
+//                            self.tipProgressLabel.text = @"";
+//                            strongSelf.btnTryLater.hidden = NO;
+//                            strongSelf.btnTryLater.alpha = 1.0f;
+//                            [strongSelf.view layoutIfNeeded];
+//                        }];
+//                    }
                 });
                 
                 [strongSelf.view layoutIfNeeded];
@@ -235,8 +235,8 @@
         [UIView animateWithDuration:1.45 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             __strong typeof(weakSelf) strongSelf = weakSelf;
             if (!strongSelf) return;
-            strongSelf.titleLabel.alpha = 1.0f;
-            strongSelf.subTitleLabel.alpha = 1.0f;
+//            strongSelf.titleLabel.alpha = 1.0f;
+//            strongSelf.subTitleLabel.alpha = 1.0f;
             strongSelf.bindingImageView.alpha = 1.0f;
             [strongSelf.view layoutIfNeeded];
         }completion:^(BOOL finished) {
@@ -256,8 +256,8 @@
     self.btnEnjoy.alpha = 0.0f;
     if(!self.bBindSuccess)
     {
-        self.titleLabel.text = NSLocalizedString(@"Binding Smart Watch", nil);
-        self.subTitleLabel.text = NSLocalizedString(@"Please keep the smart watch nearby your iPhone.", nil);
+//        self.titleLabel.text = NSLocalizedString(@"Binding Smart Watch", nil);
+//        self.subTitleLabel.text = NSLocalizedString(@"Please keep the smart watch nearby your iPhone.", nil);
         self.bindingImageView.hidden = NO;
         self.resultView.alpha = 0.0f;
         [FitCloudKit bindUserObject:USER_ID abortIfExist:NO block:^(BOOL succeed, NSError *error) {

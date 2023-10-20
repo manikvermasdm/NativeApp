@@ -105,7 +105,7 @@ typedef NS_ENUM(NSInteger, REALTIMEHEALTHMEASUREEVENTTYPE)
     }
     if(FITCLOUDREALTIMEMHEALTHEASUREITEM_NONE == item)
     {
-        XLOG_ERROR(@"试图创建未知类型的健康实时测量(测量类型：%@)", @(etype));
+//        XLOG_ERROR(@"试图创建未知类型的健康实时测量(测量类型：%@)", @(etype));
         return nil;
     }
     FitCloudRealTimeHealthMeasuringParam *param = [FitCloudRealTimeHealthMeasuringParam new];
@@ -122,14 +122,14 @@ typedef NS_ENUM(NSInteger, REALTIMEHEALTHMEASUREEVENTTYPE)
         REALTIMEHEALTHMEASUREEVENTTYPE etype = REALTIMEHEALTHMEASUREEVENTTYPE_HEARTRATE;
         FitCloudRealTimeHealthMeasuringParam *param = [[self class] measureParamWith:etype];
         if(!param) return;
-        ConsoleResultToastTip(self.view);
+//        ConsoleResultToastTip(self.view);
         [FitCloudKit requestRealTimeHealthMeasuring:param block:^(BOOL succeed, NSError *error) {
             if(!succeed || [error isKindOfClass:[NSError class]])
             {
-                XLOG_ERROR(@"健康实时测量(测量类型：%@)启动失败：%@", @(etype), error);
+//                XLOG_ERROR(@"健康实时测量(测量类型：%@)启动失败：%@", @(etype), error);
                 return;
             }
-            XLOG_INFO(@"健康实时测量(测量类型：%@)启动成功。", @(etype));
+//            XLOG_INFO(@"健康实时测量(测量类型：%@)启动成功。", @(etype));
         }];
         
     }
@@ -138,19 +138,19 @@ typedef NS_ENUM(NSInteger, REALTIMEHEALTHMEASUREEVENTTYPE)
         REALTIMEHEALTHMEASUREEVENTTYPE etype = REALTIMEHEALTHMEASUREEVENTTYPE_ALL;
         FitCloudRealTimeHealthMeasuringParam *param = [[self class] measureParamWith:etype];
         if(!param) return;
-         ConsoleResultToastTip(self.view);
+//         ConsoleResultToastTip(self.view);
         [FitCloudKit requestRealTimeHealthMeasuring:param block:^(BOOL succeed, NSError *error) {
             if(!succeed || [error isKindOfClass:[NSError class]])
             {
-                XLOG_ERROR(@"健康实时测量(测量类型：%@)启动失败：%@", @(etype), error);
+//                XLOG_ERROR(@"健康实时测量(测量类型：%@)启动失败：%@", @(etype), error);
                 return;
             }
-            XLOG_INFO(@"健康实时测量(测量类型：%@)启动成功。", @(etype));
+//            XLOG_INFO(@"健康实时测量(测量类型：%@)启动成功。", @(etype));
         }];
     }
     else if(indexPath.row == 2)
     {
-        ConsoleResultToastTip(self.view);
+//        ConsoleResultToastTip(self.view);
         FitCloudRealTimeHealthMeasuringParam *param = [FitCloudRealTimeHealthMeasuringParam new];
         param.item = FITCLOUDREALTIMEMHEALTHEASUREITEM_NONE;
         param.interval = 5;
@@ -158,10 +158,10 @@ typedef NS_ENUM(NSInteger, REALTIMEHEALTHMEASUREEVENTTYPE)
         [FitCloudKit requestRealTimeHealthMeasuring:param block:^(BOOL succeed, NSError *error) {
             if(!succeed || [error isKindOfClass:[NSError class]])
             {
-                XLOG_ERROR(@"健康实时测量停止失败：%@", error);
+//                XLOG_ERROR(@"健康实时测量停止失败：%@", error);
                 return;
             }
-            XLOG_INFO(@"健康实时测量停止成功。");
+//            XLOG_INFO(@"健康实时测量停止成功。");
         }];
     }
 }

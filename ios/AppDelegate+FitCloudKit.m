@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate+FitCloudKit.h"
-
+#import <FitCloudKit/FitCloudKit.h>
 @implementation AppDelegate (FitCloudKit)
 
 -(void) fitCloudKitConfig
@@ -26,7 +26,7 @@
  */
 -(void) OnFindiPhoneEvent
 {
-    XLOG_INFO(@"%@", @"手环请求查找手机...");
+//    XLOG_INFO(@"%@", @"手环请求查找手机...");
     //Implement your logic here when the app receives a phone find request event, such as vibration, playing a music, or creating a local notification, etc
 }
 
@@ -35,7 +35,7 @@
  */
 -(void)OnTakePhotoCtrl
 {
-    XLOG_INFO(@"%@", @"手环控制手机拍照...");
+//    XLOG_INFO(@"%@", @"手环控制手机拍照...");
     //the App can implement photo take logic here
 }
 
@@ -45,7 +45,7 @@
  */
 -(void) OnRealTimeHealthMeasuringData:(NSArray<FitCloudRealTimeHealthMeasuringResultObject*>*)records
 {
-    XLOG_INFO(@"%@", @"实时运动健康测量数据...");
+//    XLOG_INFO(@"%@", @"实时运动健康测量数据...");
     //According to the actual business logic response bracelet real-time measurement data
 }
 
@@ -56,7 +56,7 @@
  */
 -(void)OnRealTimeECGData:(NSArray<NSNumber *> *)ecgDataArray interval:(NSInteger)interval
 {
-    XLOG_INFO(@"%@", @"心电实时测量数据...");
+//    XLOG_INFO(@"%@", @"心电实时测量数据...");
     //According to the actual business logic response bracelet real-time ecg measurement data
 }
 
@@ -65,7 +65,7 @@
  */
 -(void) OnRealTimeECGStop
 {
-    XLOG_INFO(@"%@", @"心电实时测量结束...");
+//    XLOG_INFO(@"%@", @"心电实时测量结束...");
     //Notify the business logic ecg real-time measurement stopped
 }
 
@@ -74,7 +74,7 @@
  */
 -(void) OnBraceletAlive
 {
-    XLOG_INFO(@"收到手环与手机连接活跃通知...");
+//    XLOG_INFO(@"收到手环与手机连接活跃通知...");
     //the App can actively synchronize the movement health data of the bracelet to achieve the function of background synchronization data. Please add it according to the specific project needs. Note that frequent synchronization data in the background may affect the power consumption of the bracelet device.
 }
 
@@ -89,15 +89,15 @@
     message = [[message stringByReplacingOccurrencesOfString:@"<" withString:@"["] stringByReplacingOccurrencesOfString:@">" withString:@"]"];
     if(level == FITCLOUDKITLOGLEVEL_INFO)
     {
-        XLOG_INFO(@"%@", message);
+//        XLOG_INFO(@"%@", message);
     }
     else if(level == FITCLOUDKITLOGLEVEL_WARNING)
     {
-        XLOG_WARNING(@"%@", message);
+//        XLOG_WARNING(@"%@", message);
     }
     else if(level == FITCLOUDKITLOGLEVEL_ERROR)
     {
-        XLOG_ERROR(@"%@", message);
+//        XLOG_ERROR(@"%@", message);
     }
 }
 

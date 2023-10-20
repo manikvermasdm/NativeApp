@@ -21,7 +21,7 @@ static UIColor * strokeColor = nil;
     if (self) {
         self.progress = 0.f;
         self.contentsScale = [UIScreen mainScreen].scale;
-        strokeColor = RGB(0x75, 0xBD, 0x21);
+//        strokeColor = RGB(0x75, 0xBD, 0x21);
     }
     return self;
 }
@@ -38,7 +38,7 @@ static UIColor * strokeColor = nil;
 - (void)reset
 {
     self.progress = 0.f;
-    strokeColor = RGB(0xff, 0xff, 0xff);
+//    strokeColor = RGB(0xff, 0xff, 0xff);
     recordProgcessing = 0.f;
     finishProgcessing = 0.f;
 }
@@ -113,7 +113,7 @@ static UIColor * strokeColor = nil;
     CGContextSetLineCap(ctx, kCGLineCapRound);
     
     //设置RGB,取0.0~1.0之间,x/255.0
-    CGContextSetRGBStrokeColor(ctx, strokeColor.red, strokeColor.green, strokeColor.blue, 1.0);
+//    CGContextSetRGBStrokeColor(ctx, strokeColor.red, strokeColor.green, strokeColor.blue, 1.0);
     
 //    CGContextSetStrokeColorWithColor(ctx, [UIColor colorWithRed:60.0/255.0 green:151.0/255.0 blue:227.0/255.0 alpha:1.0].CGColor);
     

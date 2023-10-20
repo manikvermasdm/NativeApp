@@ -34,9 +34,9 @@
     if(indexPath.row == 0)
     {
         [FitCloudKit getDrinkRemindSettingWithBlock:^(BOOL succeed, FitCloudDRObject *drSetting, NSError *error) {
-            XLOG_INFO(@"Drink Remind Settings:\nisOn:%@\ninterval:%@\nbegin:%@\nend:%@", @(drSetting.on), @(drSetting.interval), @(drSetting.begin), @(drSetting.end));
+//            XLOG_INFO(@"Drink Remind Settings:\nisOn:%@\ninterval:%@\nbegin:%@\nend:%@", @(drSetting.on), @(drSetting.interval), @(drSetting.begin), @(drSetting.end));
             dispatch_async(dispatch_get_main_queue(), ^{
-                ConsoleResultToastTip(self.view);
+//                ConsoleResultToastTip(self.view);
             });
         }];
     }
@@ -49,7 +49,7 @@
         settings.end = 60*20;
         [FitCloudKit setDrinkRemind:settings block:^(BOOL succeed, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
-                OpResultToastTip(self.view, succeed);
+//                OpResultToastTip(self.view, succeed);
             });
         }];
     }
